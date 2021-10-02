@@ -1,5 +1,9 @@
 :root {
   --bg-orange: #e97865;
+  --bg-light-orange: #e1b8a0;
+  --bg-dark: #1f2937;
+  --bg-cream: #f0eade;
+  --bg-light-blue: #bedce4;
   --txt-light: #ece5d7;
 }
 
@@ -10,7 +14,23 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* navbar */
+nav {
+  background: var(--bg-dark);
+  color: var(--txt-light);
+  height: 75px;
+}
+
+/* Header */
+
+.top {
+  background-color: var(--bg-light-orange);
 }
 
 .hero {
@@ -64,4 +84,22 @@ body {
 
 .wave svg {
   object-fit: contain;
+}
+
+/* Conent */
+
+.content {
+  /* flex: 1; */
+  height: 2000px;
+  background: linear-gradient(#e1b8a0, #bedce4);
+}
+
+/* footer */
+
+.wave-bottom {
+  background-color: var(--bg-light-blue);
+}
+footer {
+  height: 75px;
+  background-color: var(--bg-dark);
 }
