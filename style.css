@@ -209,10 +209,6 @@ nav .nav-links a {
   font-size: 1.7em;
 }
 
-.content .reviews {
-  height: 800px;
-}
-
 @media screen and (min-width: 1080px) {
   .how-box-container {
     flex-direction: row;
@@ -222,6 +218,92 @@ nav .nav-links a {
     text-align: center;
   }
 }
+
+/* Content -- Reviews */
+.reviews {
+  height: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.review-bg {
+  background: var(--bg-orange);
+  color: var(--bg-dark);
+  width: 350px;
+  position: relative;
+}
+
+.review-box {
+  width: 200px;
+  text-align: center;
+}
+
+.review-bg h3 {
+  margin-top: 25px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.reviewer {
+  font-weight: 600;
+  font-size: 1.3em;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 10px;
+}
+.rv-1 {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+}
+
+.rv-2 {
+  position: absolute;
+  top: 600px;
+  left: 100px;
+}
+
+.rv-3 {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .reviews {
+    height: 1100px;
+  }
+
+  .review-bg {
+    width: 700px;
+  }
+
+  .review-bg h3 {
+    margin-top: 25px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3em;
+  }
+
+  .rv-1 {
+    position: absolute;
+    top: 150px;
+    left: 70px;
+  }
+
+  .rv-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+  }
+
+  .rv-3 {
+    position: absolute;
+    display: inline-block;
+    bottom: 55px;
+    left: 65px;
+  }
+}
+
 /* Content -- Signup */
 
 .signup {
@@ -306,6 +388,13 @@ nav .nav-links a {
 
 .wave-bottom {
   background-color: var(--bg-light-blue);
+  min-width: 800px;
+}
+
+@media screen and (min-width: 800px) {
+  .wave-bottom {
+    min-width: none;
+  }
 }
 
 footer {
