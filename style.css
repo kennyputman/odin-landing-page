@@ -388,13 +388,6 @@ nav .nav-links a {
 
 .wave-bottom {
   background-color: var(--bg-light-blue);
-  min-width: 800px;
-}
-
-@media screen and (min-width: 800px) {
-  .wave-bottom {
-    min-width: none;
-  }
 }
 
 footer {
