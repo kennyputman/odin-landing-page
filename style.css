@@ -4,6 +4,7 @@
 
 :root {
   --bg-orange: #e97865;
+  --bg-og-dark: #db705e;
   --bg-light-orange: #e1b8a0;
   --bg-dark: #1f2937;
   --bg-cream: #f0eade;
@@ -37,6 +38,22 @@ p,
 a {
   font-family: "Noto Sans Display", sans-serif;
   font-size: 18px;
+}
+
+/* utilities */
+.signup-btn {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  width: 100px;
+  color: var(--txt-light);
+  font-size: 1.15em;
+  background-color: var(--bg-orange);
+  transition-duration: 0.4s;
+}
+
+.signup-btn:hover {
+  background: var(--bg-og-dark);
 }
 
 /* navbar */
@@ -104,19 +121,12 @@ nav .nav-links a {
 }
 
 .left-content p {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 0 15px;
 }
+
 .left-content button {
-  border: none;
-  margin-bottom: 10px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  width: 100px;
-  color: var(--txt-light);
-  font-size: 1em;
-  font-weight: 600;
-  background-color: var(--bg-orange);
+  margin-bottom: 20px;
 }
 
 .hero-container .images {
@@ -415,7 +425,7 @@ nav .nav-links a {
     width: 275px;
     position: absolute;
     top: 270px;
-    left: 35px;
+    left: 25px;
   }
 
   #vinyard {
